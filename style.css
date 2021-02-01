@@ -1,0 +1,31 @@
+article, hr {
+    width: 600px;
+    margin: auto;
+    background-color: #ceecff;
+}
+
+article {
+    padding: 10px;
+}
+
+header  {
+    width: 600px;
+    margin: auto;
+    background-color: #6AB023;
+    padding: 10px;
+}
+
+nav, h1, h2, h3  {
+    font-family: Castellar;
+    text-align: center;
+}
+
+p, li   {
+    font-family: Bodoni MT;
+    font-size: 16px;
+}
+
+.profile-image-container    {
+    text-align: center;
+    height: 200px;
+}

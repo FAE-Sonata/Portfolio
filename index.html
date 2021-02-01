@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- can use internal <style> tags instead -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- Header with navigation links -->
+    <header>
+        <h1>My website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- basic INTRO section -->
+    <article>
+        <!-- force central align for profile picture -->
+        <div class="profile-image-container"><img src="LinkedIn profile.jpg"></div>
+        <h2>Intro</h2>
+        <p>I am Kevin HY Shu, an engineer in the Washington, D.C. metropolitan area.</p>
+    </article>
+    <!-- horizontal separator >>> About Me section -->
+    <hr>
+    <article>
+        <h2>About me</h2>
+        <!-- un-numbered list -->
+        <ul>
+            <li>I have collaborated in multiple DataKind DC projects, and look
+                forward to continuing similar collaboration elsewhere.
+            </li>
+            <li>After obtaining my B.S. from Carnegie Mellon University, I worked
+                as a data analyst and eventually discovered my technical acumen is
+                better suited to optimizing existing processes.
+            </li>
+            <li>I am an enthusiast for period instrument performances of music
+                written by composers up to and including Ravel. At least I have
+                been able to put my scripting skills to use in one of my
+                other hobbies, editing Wikipedia.
+            </li>
+        </ul>
+        <h3>Sample projects</h3>
+        <!-- un-numbered list -->
+        <ul>
+            <li>An interactive app (<a href="metrorail_timeline-rpubs.html">presentation</a>) to
+                map the Washington Metro system throughout its expansions.
+            </li>
+            <li>A <a href="https://github.com/FAE-Sonata/Wikipath_pub">script</a> to query a
+                shortest linkage path between two non-orphaned English Wikipedia articles.
+            </li>
+        </ul>
+    </article>
+    <!-- horizontal separator >>> Contact section -->
+    <hr>
+    <article>
+        <h2 id="contact">Contact</h2>
+        <!-- ordered list: phonetically spelling out email as anti-spam -->
+        <ol>
+            <li><a href="https://www.linkedin.com/in/kshuhydca/">LinkedIn</a></li>
+            <li><a href="https://github.com/FAE-Sonata">GitHub</a></li>
+            <li>Email: kshu AT alumni dot cmu dot edu</li>
+        </ol>
+    </article>
+
+</body>
+</html>
