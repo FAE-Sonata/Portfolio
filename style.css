@@ -1,18 +1,20 @@
 article, hr {
     width: 600px;
     margin: auto;
-    background-color: #ceecff;
+    background-color: #ceecff; /* weaker color for body of page */
 }
 
+/* mixing this with hr produces an ugly overextended horizontal line */
 article {
     padding: 10px;
 }
 
+/* forcing same width and margin as article containers */
 header  {
     width: 600px;
     margin: auto;
     background-color: #6AB023;
-    padding: 10px;
+    padding: 10px; /* so left-aligned text isn't scrunched up against container boundary */
 }
 
 nav, h1, h2, h3  {
@@ -26,6 +28,6 @@ p, li   {
 }
 
 .profile-image-container    {
-    text-align: center;
-    height: 200px;
+    text-align: center; /* forcing centralization */
+    height: 200px; /* 250px or larger will lose resolution */
 }
