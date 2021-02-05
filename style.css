@@ -13,7 +13,7 @@ article {
 header  {
     width: 600px;
     margin: auto;
-    background-color: #6AB023;
+    background-color: #80D52A;
     padding: 10px; /* so left-aligned text isn't scrunched up against container boundary */
 }
 
@@ -30,4 +30,18 @@ p, li   {
 .profile-image-container    {
     text-align: center; /* forcing centralization */
     height: 200px; /* 250px or larger will lose resolution */
+}
+
+/* manually altered from default using https://webaim.org/resources/contrastchecker/
+    to ensure WCAG AA/AAA compliance */
+a:link  {
+    color: #0000AA;
+}
+
+a:visited   {
+    color: #5C005C;
+}
+
+a:hover {
+    color: #660000;
 }
