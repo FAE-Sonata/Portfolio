@@ -12,8 +12,11 @@
     <header>
         <h1>My website</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#contact">Contact</a>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
         </nav>
     </header>
     <!-- basic INTRO section -->
@@ -21,7 +24,7 @@
         <!-- force central align for profile picture -->
         <div class="profile-image-container"><img src="LinkedIn_profile.jpg" alt="LinkedIn profile"></div>
         <h2>Intro</h2>
-        <p>I am Kevin HY Shu, an engineer in the Washington, D.C. metropolitan area.</p>
+        <p class="text-center">I am Kevin HY Shu, an engineer in the Washington, D.C. metropolitan area.</p>
     </article>
     <!-- horizontal separator >>> About Me section -->
     <hr>
@@ -42,7 +45,7 @@
                 other hobbies, editing Wikipedia.
             </li>
         </ul>
-        <h3>Sample projects</h3>
+        <h3 id="portfolio">Sample projects</h3>
         <!-- un-numbered list -->
         <ul>
             <li>An interactive app (<a href="metrorail_timeline-rpubs.html">presentation</a>) to
@@ -58,11 +61,22 @@
     <article>
         <h2 id="contact">Contact</h2>
         <!-- ordered list: phonetically spelling out email as anti-spam -->
+        <!--
         <ol>
             <li><a href="https://www.linkedin.com/in/kshuhydca/">LinkedIn</a></li>
             <li><a href="https://github.com/FAE-Sonata">GitHub</a></li>
             <li>Email: kshu AT alumni dot cmu dot edu</li>
         </ol>
+    -->
+        <form>
+            <label for="user-name">Your name:</label>
+            <input id="user-name" type="text" name="name" autofocus="on" required/>
+            <label for="user-email">Your email:</label>
+            <input id="user-email" type="text" name="email" required/>
+            <label for="user-message">Message:</label>
+            <textarea id="user-message"
+                type="text" name="message" maxlength="200"></textarea>
+        </form>
     </article>
 
 </body>

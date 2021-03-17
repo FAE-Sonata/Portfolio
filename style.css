@@ -1,5 +1,5 @@
 article, hr {
-    width: 600px;
+    /* width: 600px; remove manual width setting */
     margin: auto;
     background-color: #ceecff; /* weaker color for body of page */
 }
@@ -11,7 +11,7 @@ article {
 
 /* forcing same width and margin as article containers */
 header  {
-    width: 600px;
+    /* width: 600px; remove manual width setting */
     margin: auto;
     background-color: #80D52A;
     padding: 10px; /* so left-aligned text isn't scrunched up against container boundary */
@@ -19,12 +19,58 @@ header  {
 
 nav, h1, h2, h3  {
     font-family: Castellar;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    /* Changes the display property from its default to `flex`. */
+    display: flex;
+    /*
+      You want the navigation to display in a single row. This is 
+      the default value for `display: flex`, so you don't need
+      to define its `flex-direction` in this case.
+    */
+  
+    /*
+      Removes the default padding to the left of the
+      unordered list.
+    */
+    padding-left: 0;
+  
+    /*
+      Removes the bullet points from the list items within the 
+      unordered list.
+    */
+    list-style: none;
+  }
+
+header nav ul li a {
+    /* The link color is white. */
+    /*
+    color: #fff;
+    */
+    /* Removes the underline from the link. */
+    text-decoration: none;
+    /* Applies 10 pixels of margin to the right of each link 
+       creating a visual gap between the navigation links. */
+    margin: 0 10px 0 0;
+  }
+
+h1, h2, h3  {
     text-align: center;
 }
 
-p, li   {
+p, li, form label, form input[type=text]   {
     font-family: Bodoni MT;
     font-size: 16px;
+}
+
+.text-center    {
+    text-align: center;
 }
 
 .profile-image-container    {
@@ -45,3 +91,78 @@ a:visited   {
 a:hover {
     color: #660000;
 }
+
+/*
+media-query
+*/
+@media all and (min-width: 600px) {
+    header {
+      /* Changes the default setting from `block` to `flex`. */
+      display: flex;
+      /* Pushes the items (the title and nav) to the far sides of the 
+         browser with space between them. */
+      justify-content: space-between;
+      /* Adds 0 pixels padding top and bottom, and 30 pixels padding 
+         left and right. */
+         /*
+      padding: 0 30px;
+      */
+      max-width: 1200px;
+    }
+    
+    article, hr {
+        max-width: 1200px;
+    }
+  
+    header h1 {
+      /* Sets 14 pixels of margin above and below the `h1` and sets 
+          0 pixels of margin to the left and right. */
+      margin: 14px 0;
+      /* Removes or sets 0 pixels of padding above the `h1`. */
+      padding-top: 0;
+    }
+  
+    header nav {
+      /*
+        Pushes the navigation container down by 8 pixels to make it
+        present a little better visually within the space.
+      */
+      margin-top: 8px;
+    }
+    /* Users cannot hover on mobile devices, so that is why you
+       implement this behavior only for larger screens. */
+    header nav ul li a:hover {
+      /* Targets the change when a user holds the pointer over the anchor tag 
+         (link) within the list items within the unordered list that 
+         is within the navigation that is within the header. */
+      color: #bdbdbd;
+    }
+
+    form label {
+      display: block; /* force field to appear one below another */
+      /*
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: gray;
+      font-family: arial;
+      */
+    }
+
+    form input[type=text] {
+      /*
+      color: #000;
+      font-size: 16px;
+      */
+      margin-bottom: 10px;
+    }
+
+    form textarea {
+      height: 4.75rem;
+      width: 100%;
+      /*
+      color: #000;
+      font-size: 16px;
+      margin-bottom: 20px;
+      */
+    }
+  }
