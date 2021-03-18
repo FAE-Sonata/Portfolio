@@ -22,9 +22,12 @@
     <!-- basic INTRO section -->
     <article>
         <!-- force central align for profile picture -->
-        <div class="profile-image-container"><img src="LinkedIn_profile.jpg" alt="LinkedIn profile"></div>
+        <div class="profile-image-container">
+            <img src="LinkedIn_profile.jpg" alt="LinkedIn profile">
+        </div>
         <h2>Intro</h2>
-        <p class="text-center">I am Kevin HY Shu, an engineer in the Washington, D.C. metropolitan area.</p>
+        <p class="text-center">I am Kevin HY Shu, an engineer in the Washington, D.C. metropolitan
+            area.</p>
     </article>
     <!-- horizontal separator >>> About Me section -->
     <hr>
@@ -48,11 +51,14 @@
         <h3 id="portfolio">Sample projects</h3>
         <!-- un-numbered list -->
         <ul>
-            <li>An interactive app (<a href="metrorail_timeline-rpubs.html">presentation</a>) to
-                map the Washington Metro system throughout its expansions.
+            <li>An interactive app (<a href="metrorail_timeline-rpubs.html">presentation</a>),
+                using a Python API request, R wrangling, and the Shiny library in R to map the
+                Washington Metro system throughout its expansions.
             </li>
-            <li>A <a href="https://github.com/FAE-Sonata/Wikipath_pub">script</a> to query a
-                shortest linkage path between two non-orphaned English Wikipedia articles.
+            <li>A <a href="https://github.com/FAE-Sonata/Wikipath_pub">Python script</a> to query a
+                shortest linkage path between two non-orphaned English Wikipedia articles. In the
+                future, a simple web page interface may be built to allow a user to input two terms
+                in a form.
             </li>
         </ul>
     </article>
@@ -75,7 +81,7 @@
             <input id="user-email" type="text" name="_replyto" required/>
             <label for="user-message">Message:</label>
             <textarea id="user-message"
-                type="text" name="message" maxlength="200"></textarea>
+                type="text" name="message" maxlength="1000"></textarea>
             <button type="submit">Submit</button>
         </form>
     </article>
