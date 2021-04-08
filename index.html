@@ -35,53 +35,59 @@
         <h2>About me</h2>
         <!-- un-numbered list -->
         <ul>
-            <li>I have collaborated in multiple DataKind DC projects, and look
-                forward to continuing similar collaboration elsewhere.
+            <li>I have collaborated in multiple DataKind DC projects, and look forward to
+                 continuing similar collaboration elsewhere.
             </li>
-            <li>After obtaining my B.S. from Carnegie Mellon University, I worked
-                as a data analyst and eventually discovered my technical acumen is
-                better suited to optimizing existing processes.
+            <li>After obtaining my B.S. from Carnegie Mellon University, I worked as a data analyst
+                 and eventually discovered my technical acumen is better suited to optimizing
+                 existing processes.
             </li>
-            <li>I am an enthusiast for period instrument performances of music
-                written by composers up to and including Ravel. At least I have
-                been able to put my scripting skills to use in one of my
-                other hobbies, editing Wikipedia.
+            <li>I am an enthusiast for period instrument performances of music written by composers
+                 up to and including Ravel. At least I have been able to put my scripting skills to
+                 use in one of my other hobbies, editing Wikipedia.
             </li>
         </ul>
         <h3 id="portfolio">Sample projects</h3>
         <!-- un-numbered list -->
-        <ul>
-            <li>An interactive app (<a href="metrorail_timeline-rpubs.html">presentation</a>),
-                using a Python API request, R wrangling, and the Shiny library in R to map the
-                Washington Metro system throughout its expansions.
-            </li>
-            <li>A <a href="https://github.com/FAE-Sonata/Wikipath_pub">Python script</a> to query a
-                shortest linkage path between two non-orphaned English Wikipedia articles. In the
-                future, a simple web page interface may be built to allow a user to input two terms
-                in a form.
-            </li>
-        </ul>
+        <div class="group">
+            <div class="item">
+                <img src="Metrorail_timeline_197905.png"
+                    alt="Metrorail timeline" width="250px"/>
+                <h3>Metrorail Timeline</h3>
+                <p>An interactive app (<a href="metrorail_timeline-rpubs.html">presentation</a>),
+                     using a Python API request, R wrangling, and the Shiny library in R to map the
+                     Washington Metro system throughout its expansions.
+                </p>                
+            </div>
+            <div class="item">
+                <img src="wikipath_3rd_degree_sample.png"
+                    alt="Wikipath script results" width="250px"/>
+                <h3>Wikipath</h3>
+                <p>A <a href="https://github.com/FAE-Sonata/Wikipath_pub">
+                    Python script</a> to query a shortest linkage path between two non-orphaned
+                     English Wikipedia articles. In the future, a simple web page interface may be
+                     built to allow a user to input two terms in a form.</p>
+            </div>
+        </div>
     </article>
     <!-- horizontal separator >>> Contact section -->
     <hr>
     <article>
         <h2 id="contact">Contact</h2>
         <!-- ordered list: phonetically spelling out email as anti-spam -->
-        <!--
         <ol>
             <li><a href="https://www.linkedin.com/in/kshuhydca/">LinkedIn</a></li>
             <li><a href="https://github.com/FAE-Sonata">GitHub</a></li>
             <li>Email: kshu AT alumni dot cmu dot edu</li>
         </ol>
-    -->
         <form action="https://formspree.io/f/xpzovnbn" method="POST">
             <label for="user-name">Your name:</label>
-            <input id="user-name" type="text" name="name" autofocus="on" required/>
+            <input id="user-name" type="text" name="name" required/>
             <label for="user-email">Your email:</label>
             <input id="user-email" type="text" name="_replyto" required/>
             <label for="user-message">Message:</label>
             <textarea id="user-message"
-                type="text" name="message" maxlength="1000"></textarea>
+                type="text" maxlength="1000"></textarea>
             <button type="submit">Submit</button>
         </form>
     </article>

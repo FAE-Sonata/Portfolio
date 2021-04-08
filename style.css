@@ -92,6 +92,30 @@ a:hover {
     color: #660000;
 }
 
+form label {
+  display: block; /* force field to appear one below another */
+}
+
+form input[type=text] {
+  margin-bottom: 10px;
+}
+
+form textarea {
+  height: 4.75rem;
+  width: 100%;
+}
+
+/* for sample projects */
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
 /*
 media-query
 */
@@ -136,33 +160,5 @@ media-query
          (link) within the list items within the unordered list that 
          is within the navigation that is within the header. */
       color: #bdbdbd;
-    }
-
-    form label {
-      display: block; /* force field to appear one below another */
-      /*
-      font-size: 18px;
-      margin-bottom: 5px;
-      color: gray;
-      font-family: arial;
-      */
-    }
-
-    form input[type=text] {
-      /*
-      color: #000;
-      font-size: 16px;
-      */
-      margin-bottom: 10px;
-    }
-
-    form textarea {
-      height: 4.75rem;
-      width: 100%;
-      /*
-      color: #000;
-      font-size: 16px;
-      margin-bottom: 20px;
-      */
     }
   }
